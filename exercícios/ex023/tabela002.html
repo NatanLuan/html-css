@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(even) /* 2n-1*/ {
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +53,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -43,10 +62,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Área das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Área km²</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 103px;">Área km²</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +181,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Área (Km²) </th>
+                <th scope="row">Total de Área (Km²) </th>
                 <td class="num"><strong>8 510 295,914</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores suscipit expedita incidunt labore necessitatibus itaque? Ducimus animi, sapiente quibusdam perspiciatis rem porro suscipit corporis adipisci harum sequi officiis dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus labore officiis necessitatibus id recusandae sed corrupti! Suscipit, fuga quam aperiam similique amet esse voluptates dolore ut, sapiente praesentium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, itaque perspiciatis eaque cumque nulla optio commodi adipisci nemo? Nostrum molestiae vero, sit labore ex iusto autem odit sunt doloremque tempora? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam id aspernatur odit molestias, necessitatibus eligendi vero, porro amet eaque totam ab explicabo culpa nihil. Modi laboriosam optio eligendi explicabo.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores suscipit expedita incidunt labore necessitatibus itaque? Ducimus animi, sapiente quibusdam perspiciatis rem porro suscipit corporis adipisci harum sequi officiis dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus labore officiis necessitatibus id recusandae sed corrupti! Suscipit, fuga quam aperiam similique amet esse voluptates dolore ut, sapiente praesentium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, itaque perspiciatis eaque cumque nulla optio commodi adipisci nemo? Nostrum molestiae vero, sit labore ex iusto autem odit sunt doloremque tempora? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam id aspernatur odit molestias, necessitatibus eligendi vero, porro amet eaque totam ab explicabo culpa nihil. Modi laboriosam optio eligendi explicabo.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores suscipit expedita incidunt labore necessitatibus itaque? Ducimus animi, sapiente quibusdam perspiciatis rem porro suscipit corporis adipisci harum sequi officiis dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus labore officiis necessitatibus id recusandae sed corrupti! Suscipit, fuga quam aperiam similique amet esse voluptates dolore ut, sapiente praesentium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, itaque perspiciatis eaque cumque nulla optio commodi adipisci nemo? Nostrum molestiae vero, sit labore ex iusto autem odit sunt doloremque tempora? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam id aspernatur odit molestias, necessitatibus eligendi vero, porro amet eaque totam ab explicabo culpa nihil. Modi laboriosam optio eligendi explicabo.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores suscipit expedita incidunt labore necessitatibus itaque? Ducimus animi, sapiente quibusdam perspiciatis rem porro suscipit corporis adipisci harum sequi officiis dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus labore officiis necessitatibus id recusandae sed corrupti! Suscipit, fuga quam aperiam similique amet esse voluptates dolore ut, sapiente praesentium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, itaque perspiciatis eaque cumque nulla optio commodi adipisci nemo? Nostrum molestiae vero, sit labore ex iusto autem odit sunt doloremque tempora? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam id aspernatur odit molestias, necessitatibus eligendi vero, porro amet eaque totam ab explicabo culpa nihil. Modi laboriosam optio eligendi explicabo.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores suscipit expedita incidunt labore necessitatibus itaque? Ducimus animi, sapiente quibusdam perspiciatis rem porro suscipit corporis adipisci harum sequi officiis dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus labore officiis necessitatibus id recusandae sed corrupti! Suscipit, fuga quam aperiam similique amet esse voluptates dolore ut, sapiente praesentium neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, itaque perspiciatis eaque cumque nulla optio commodi adipisci nemo? Nostrum molestiae vero, sit labore ex iusto autem odit sunt doloremque tempora? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ipsam id aspernatur odit molestias, necessitatibus eligendi vero, porro amet eaque totam ab explicabo culpa nihil. Modi laboriosam optio eligendi explicabo.</p>
 </body>
 </html>
